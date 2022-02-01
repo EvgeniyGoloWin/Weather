@@ -1,0 +1,14 @@
+.MainText {
+    color: grey;
+    text-align: center;
+}
+
+.KievWeather {
+    display: flex;
+    flex-direction: column;
+}
+.day__blocks{
+    display: flex;
+    justify-content: space-around;
+}
+

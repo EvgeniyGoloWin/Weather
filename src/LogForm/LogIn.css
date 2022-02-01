@@ -1,0 +1,29 @@
+.Submit:hover {
+    background-color: orange;
+}
+.name:hover {
+    background-color: lightgrey;
+}
+
+.password:hover {
+    background-color: lightgrey;
+}
+.form__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Form {
+    padding: 10px;
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid lightgrey;
+}
+input{
+    margin: 10px 0;
+}

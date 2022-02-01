@@ -1,0 +1,32 @@
+.MainBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 90%);
+    height:border-box;
+    border: 1px solid #b1a1a1;
+    padding: 10px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.MainBlock:hover {
+    background-color: orange;
+}
+
+.StateWeather {
+    display: flex;
+    background-color: #61dafb;
+    border: 1px solid #61dafb;
+    color: white;
+    padding: 5px;
+}
+.Icon{
+    width: 80px;
+    height: 80px;
+}
+
+.Degree {
+    width: 15px;
+    height: 10px;
+}

@@ -1,14 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import Weather from "./Weather";
+import Weather from "./features/weather/Weather";
+import Counter from "./features/counter/counter";
 
 
 function App() {
-  return (
-      <>
-      <Weather/>
-      </>
-  );
+    return (
+        <>
+            <Weather/>
+            <Counter/>
+        </>
+    );
 }
 
 export default App;

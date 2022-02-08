@@ -12,3 +12,12 @@
     justify-content: space-around;
 }
 
+.btnHide {
+    display: flex;
+    width: 100px;
+}
+
+.btnShow {
+    display: flex;
+    width: 100px;
+}

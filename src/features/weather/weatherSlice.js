@@ -25,12 +25,15 @@ export const WeatherSlice = createSlice({
     },
     extraReducers: {
         [fetchWeather.pending]: (state) => {
-            state.status = 'loading';state.error = null;},
+            state.status = 'loading';
+            state.error = null;},
         [fetchWeather.fulfilled]: (state,action) => {
             state.status = 'resolved';
             state.data = action.payload;
         },
-        [fetchWeather.rejected]: (state,action) => {},
+        [fetchWeather.rejected]: (state,action) => {
+
+        },
     }
 })
 export const {clearWeather} = WeatherSlice.actions

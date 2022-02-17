@@ -30,11 +30,17 @@ function Weather() {
             {
             state.length !== 0  && <>
                                 <h1 className={'MainText'}><em>{state.city.name}</em></h1>
-                                <div className={'day__blocks'} >
+                                <div className={'day__blocks'}
+                                >
                                     {
                                           state.list.map( (item, index) => {
-                                            return <div key={index} className={'day__blocks'}>
-                                                <DayWeather temp={item.main.temp} icon={item.weather[0].icon} desc={item.weather[0].description} newDate={item.dt_txt} />
+                                            return <div key={index} className={'day__blocks'}
+                                            >
+                                                <DayWeather temp={item.main.temp}
+                                                            icon={item.weather[0].icon}
+                                                            desc={item.weather[0].description}
+                                                            newDate={item.dt_txt}
+                                                />
                                             </div>
                                         })
                                     }

@@ -1,7 +1,6 @@
 import './App.css';
-import Weather from "./features/weather/Weather";
-import Counter from "./features/counter/counter";
-import {fetchWeather} from "./features/weather/weatherSlice";
+import Weather from "./features/weather/weather/Weather";
+import {fetchWeather} from "./features/weather/weatherSlice/weatherSlice";
 import {useEffect} from "react";
 
 
@@ -9,7 +8,6 @@ function App() {
     return (
         <>
             <Weather/>
-            <Counter/>
         </>
     );
 }

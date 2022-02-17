@@ -1,6 +1,6 @@
 import React from "react";
-import './Day-weather.css'
-import './Weather.js'
+import '../style/DayWeather.css'
+import '../weather/Weather.js'
 
 function DayWeather({temp, icon, desc, newDate}) {
     let iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
@@ -27,20 +27,18 @@ function DayWeather({temp, icon, desc, newDate}) {
                 return "Friday";
             case 6:
                 return "Saturday";
-            default: return  'hui';
+            default: return  'Empty result';
         }
     }
-
-
-    console.log({temp, icon, desc})
+    
     return(
-        <div className={'MainBlock'}>
+        <div className='MainBlock'>
 
-            <p className={'SomeDay'}> {curDay(date)}</p>
-            <img className={'Icon'} src={iconUrl} alt={'day'}/>
-            <p className={'Degree'}>{Ctemp}</p>
-            <div className={'State'}>
-                <p className={'StateWeather'}>{desc}</p>
+            <p className='SomeDay'> {curDay(date)}</p>
+            <img className='Icon' src={iconUrl} alt={'day'}/>
+            <p className='Degree'>{Ctemp}</p>
+            <div className='State'>
+                <p className='StateWeather'>{desc}</p>
             </div>
 
         </div>

@@ -1,10 +1,8 @@
 import {configureStore} from "@reduxjs/toolkit";
-import counterReducer from "../features/counter/counterSlice";
-import weatherReducer from "../features/weather/weatherSlice";
+import weatherReducer from "../features/weather/weatherSlice/weatherSlice";
 
 export default configureStore({
     reducer: {
-        counter: counterReducer,
         weather: weatherReducer
     }
 })
